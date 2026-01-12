@@ -1,0 +1,31 @@
+:root {
+  --color-amber-600: #e17100;
+  --color-amber-700: #d97706; //#bb4d00; :
+  --color-amber-700-3: rgba(187, 77, 0, 0.3);
+  --color-zinc-800: oklch(27.4% 0.006 286.033);
+  --color-amber-800: #973c00;
+  --color-amber-800-8: rgba(151, 60, 0, 0.8);
+  --base-primary: #7859cf;
+  --base-black: #000000;
+  --base-black-opacity01: red;
+  --base-secondary: #f0ebff;
+  --color-white: #ffffff;
+  --color-zinc-400: #9f9fa9;
+  --skills-bg: rgba(40, 42, 48, 0.5);
+  --skills-border: #6b6f7a;
+  --project-border-hover: rgba(187, 77, 0, 0.5);
+  --project-border: rgba(26, 26, 26, 0.5);
+  --zinc-900: oklch(21% 0.006 285.885);
+  --zinc-800: oklch(29% 0.012 285.885);
+  --zinc-700: oklch(38% 0.018 285.885);
+  --color-zinc-700: oklch(37.032% 0.01192 285.76);
+  --color-zinc-400: oklch(70.5% 0.015 286.067);
+  --color-button: oklch(0.666 0.179 58.318);
+  --color-button-hover: oklch(0.75 0.179 58.318);
+  --color-button-active: oklch(0.60 0.179 58.318);
+  --color-zinc-500: oklch(55.2% .016 285.938);
+  --color-zinc-700: oklch(37% .013 285.805);
+  --color-zinc-800: oklch(27.4% .006 286.033);
+  --color-zinc-900: oklch(21% .006 285.885);
+  --color-zinc-950: oklch(14.1% .005 285.823);
+}

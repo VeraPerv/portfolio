@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  color: var( --color-button);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.6s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--color-button-hover);
+      transition: color 0.6s ease;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: var(--color-button-hover);
+    outline: none;
+
+  }
+
+  &:active {
+    color: var(--color-button-active);
+    transition: color 0.6s ease;
+  }
+
+  svg {
+    transition: color 0.6s ease, transform 0.6s ease;
+  }
+
+  &:active svg,
+  &:focus svg,
+  &:focus-visible svg {
+    transform: rotate(180deg);
+    transition: color 0.6s ease, transform 0.6s ease;
+  }
+}

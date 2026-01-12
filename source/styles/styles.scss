@@ -1,7 +1,25 @@
 /* GLOBAL */
+@import "./common/custom-properties.scss";
+@import "./common/functions.scss";
+@import "./common/mixins.scss";
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
 /* BLOCKS */
+@import "./blocks/caption.scss";
+@import "./blocks/button.scss";
+@import "./blocks/button-scroll.scss";
+@import "./blocks/button-primary.scss";
 @import "./blocks/header.scss";
+@import "./blocks/header-menu.scss";
+@import "./blocks/hero-contacts.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/about.scss";
+@import "./blocks/skills.scss";
+@import "./blocks/projects.scss";
+@import "./blocks/projects-list.scss";
+@import "./blocks/card.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/page.scss";
+

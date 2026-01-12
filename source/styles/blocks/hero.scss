@@ -1,0 +1,94 @@
+.hero {
+  padding: 50px 16px 0;
+
+  @media(min-width: $tablet-width) {
+    padding: 50px 30px 0;
+  }
+
+  @media(min-width: $before-desktop-width) {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media(min-width: $desktop-width-after) {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.hero__img-wrapper {
+  width: 246px;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 30px;
+  position: relative;
+  @include full-shadow;
+  margin: 0 auto 32px;
+  box-shadow:
+    0 0 20px #bb4d00cc,
+    0 0 35px #ff6b0080,
+    0 0 50px #ff8c004d;
+  @media (min-width: $before-desktop-width) {
+    grid-row: 1 / 5;
+  }
+
+  @media(min-width: $desktop-width-after) {
+    border-radius: 50px;
+    width: 300px;
+    height: 396px;
+  }
+}
+
+.hero__img-wrapper img {
+
+  @media(min-width: $desktop-width-after) {}
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__caption {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 32px;
+
+  @media(min-width: $before-desktop-width) {
+    text-align: left;
+  }
+
+  @media(min-width: $desktop-width-after) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 500;
+  }
+}
+
+ .hero__profession {
+  width: 250px;
+  border-radius: 40px;
+  text-align: center;
+  margin: 20px auto 20px;
+  padding: 20px;
+  color: var(--color-amber-700);
+  background: color-mix(in oklab, var(--color-amber-700) 10%, transparent);
+
+  @media(min-width: $before-desktop-width) {
+    margin: 20px 0 20px;
+  }
+}
+
+.hero__button {
+  display: block;
+  text-align: center;
+  margin: 0 auto 32px;
+
+  @media(min-width: $before-desktop-width) {
+    margin: 0 0 32px;
+    width: 250px;
+  }
+}
+
+.hero__contacts {
+  margin-bottom: 32px;
+}

@@ -1,0 +1,25 @@
+.projects {
+  padding: 80px 16px 16px;
+  background-color: var(--color-zinc-900);
+   @media(min-width: $tablet-width) {
+    padding: 80px 30px 16px;
+  }
+}
+
+.projects__wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.projects__caption {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.projects__about {
+  margin: 0 0 64px;
+  color: var(--color-zinc-400);
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}

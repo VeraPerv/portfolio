@@ -1,0 +1,97 @@
+.hero-contacts {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+
+  @media(min-width: $before-desktop-width) {
+    justify-content: start;
+  }
+}
+
+.hero-contacts__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    transition: background-color 0.6s ease;
+
+    @media(min-width: $desktop-width-after) {
+      width: 50px;
+      height: 50px;
+    }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-amber-600);
+      transition: background-color 0.6s ease;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: var(--color-amber-600);
+    transition: background-color 0.6s ease;
+  }
+
+  &:active {
+    background-color: var(--color-button-active);
+    transition: background-color 0.6s ease;
+  }
+  }
+
+  .hero-contacts__link--github {
+    &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/github.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+    }
+  }
+
+  .hero-contacts__link--tg {
+    &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/tg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+    }
+  }
+
+  .hero-contacts__link--email {
+    &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+    }
+  }
+
+.hero-contacts__item {
+  background-color: var(--color-zinc-800);
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+
+  @media(min-width: $desktop-width-after) {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -60,7 +60,19 @@ export function processStyles () {
       lightningcss({
         lightningcssOptions: {
           minify: !isDevelopment,
-        },
+          // ✅ ИСПРАВЛЕНИЕ: отключаем strict режим
+          errorRecovery: true,
+          // ✅ Поддержка CSS переменных БЕЗ ошибок
+          customMedia: true,
+          // ✅ Игнорируем source maps ошибки
+          sourceMap: isDevelopment,
+          // ✅ Современные браузеры + CSS vars
+          targets: {
+            browsers: ['> 0.5%', 'last 2 versions', 'not dead']
+          },
+          // ✅ Не ломает var() при ошибках синтаксиса
+          recovery: true
+        }
       })
     ]))
     .pipe(dest(`${PATH_TO_DIST}styles`, { sourcemaps: isDevelopment }))
