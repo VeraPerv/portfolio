@@ -19,9 +19,10 @@
   WordPress | Pixel Perfect | Web Accessibility (A11y)
 
 ## 🔧 Сборка проекта
-  npm start	Dev-сервер + hot reload
+  Node.js- version 22
+  npm ci - запуск
+  npm start - dev режим
   npm run build	Продакшен → /build
-  npm run lint	HTML/CSS/JS проверки
   npm run preview	Просмотр продакшена
 
 🎨 Технические особенности
