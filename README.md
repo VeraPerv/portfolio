@@ -19,11 +19,11 @@
   WordPress | Pixel Perfect | Web Accessibility (A11y)
 
 ## 🔧 Сборка проекта
-  Node.js- version 22
-  npm ci - запуск
-  npm start - dev режим
-  npm run build	Продакшен → /build
-  npm run preview	Просмотр продакшена
+  - Node.js- version 22
+  - npm ci - запуск
+  - npm start - dev режим
+  - npm run build	- продакшен
+  - npm run preview	- просмотр продакшена
 
 🎨 Технические особенности
 
