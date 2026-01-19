@@ -16,6 +16,7 @@
 
 .projects-list__item {
   margin-bottom: 20px;
+  cursor: pointer;
 
   @media(min-width: $desktop-width) {
     grid-column: 2 / 3;
