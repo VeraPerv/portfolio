@@ -1,3 +1,27 @@
 {
-  "extends": "stylelint-config-htmlacademy"
+  "extends": "stylelint-config-htmlacademy",
+  "rules": {
+    "no-unknown-custom-properties": null,
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": [
+          "size-mobile",
+          "size-desktop",
+          "size-tablet",
+          "/^size-/",
+          "theme",
+          "mix"
+        ]
+      }
+    ],
+    "number-max-precision": 5,
+    "color-hex-alpha": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["function", "include", "return", "mixin"]
+      }
+    ]
+  }
 }
